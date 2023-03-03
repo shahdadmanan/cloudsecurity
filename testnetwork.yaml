@@ -1,0 +1,13 @@
+---
+data encryption:
+  -AES256
+server side encryption:
+  -AES256
+logging:
+  -enabled for all users
+ACLs:
+  -all users can view project
+ACPs:
+  -all users can view ACPs
+user authentication:
+  -access keys

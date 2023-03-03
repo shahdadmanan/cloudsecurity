@@ -1,0 +1,28 @@
+---
+data encryption:
+  -AES256
+  -AES192
+  -3DES
+  -RSA
+  -Blowfish
+  -Twofish
+server side encryption:
+  -AES256
+  -AES192
+  -3DES
+  -RSA
+  -Blowfish
+  -Twofish
+logging:
+  -enabled for all users
+  -enables for authenticated users
+ACLs:
+  -all public access blocked
+  -authors and authenticated users can view project
+ACPs:
+  -all public access blocked 
+  -authors and authenticated users can view policies
+user authentication:
+  -MFA
+  -authentication tokens
+  -access keys

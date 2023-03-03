@@ -33,4 +33,7 @@ try:
     print(response)
 except:
     print("OBJECT LOCK CONFIGURATION DOES NOT EXIST")
-
+print(".........................................................")
+# Get the bucket's logging configuration
+response = s3.get_bucket_logging(Bucket='firstpythonbuckete8a3f257-fbec-45b3-a9f1-835c629ab3c4')
+print(response)

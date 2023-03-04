@@ -15,7 +15,7 @@ def create_bucket(bucket_prefix, s3_connection):
     bucket_response = s3_connection.create_bucket(
         Bucket=bucket_name,
         CreateBucketConfiguration={
-            'LocationConstraint': 'us-east-2'  # replace with your preferred region
+            'LocationConstraint': 'us-east-2'  # this is the closeset datacenter to us in HFX.
         }
     )
     print(bucket_name, current_region)
@@ -23,5 +23,5 @@ def create_bucket(bucket_prefix, s3_connection):
 
 
 first_bucket_name, first_response = create_bucket(
-     bucket_prefix='firstpythonbucket', 
+     bucket_prefix='firstpythonbucket',
      s3_connection=s3_resource.meta.client)
